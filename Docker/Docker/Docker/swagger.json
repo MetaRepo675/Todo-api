@@ -1,0 +1,33 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Todo API",
+    "version": "1.0.0",
+    "description": "A professional Todo API with authentication"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "Development server"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Authentication",
+      "description": "User authentication endpoints"
+    },
+    {
+      "name": "Todos",
+      "description": "Todo management endpoints"
+    }
+  ]
+}
